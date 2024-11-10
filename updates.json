@@ -1,0 +1,11 @@
+{
+    "addons": {
+      "{selfhost-00000.1@proofpoint.com}": {
+        "updates": [
+          {
+            "version": "0.1"            
+          }
+        ]
+      }
+    }
+  }

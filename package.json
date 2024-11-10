@@ -1,0 +1,14 @@
+{
+  "name": "my_extension",
+  "version": "1.0.0",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^120.0.4"
+  }
+}
