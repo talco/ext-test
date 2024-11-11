@@ -50,15 +50,14 @@
     </div>
 
     <script>
-      fetch("updates.json")
-        .then((response) => response.json())
-        .then((data) => {
-          const updates =
-            data.addons["{selfhost-00000.1@proofpoint.com}"].updates;
-          const latestUpdate = updates[updates.length - 1];
-          const downloadLink = document.getElementById("download-link");
-          downloadLink.href = latestUpdate.update_link;
-          downloadLink.download = latestUpdate.update_link.split("/").pop();
+      fetch("updates.json")        
+        .then((response) => {
+            return response.json().then(updates => {
+                const latestUpdate = updates[updates.length - 1];
+                const downloadLink = document.getElementById("download-link");
+                downloadLink.href = latestUpdate.update_link;
+                downloadLink.download = latestUpdate.update_link.split("/").pop();
+            })
         })
         .catch((error) => console.error("Error fetching updates:", error));
     </script>
