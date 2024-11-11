@@ -3,16 +3,7 @@
       "{selfhost-00000.1@proofpoint.com}": {
         "updates": [
           {
-            "version": "0.1",
-            "update_link": "https://selfhost-00000.1.com/updates/0.1.zip"
-          },
-          {
-            "version": "0.2",
-            "update_link": "https://selfhost-00000.1.com/updates/0.2.zip"
-          },
-          {
-            "version": "0.3",
-            "update_link": "https://selfhost-00000.1.com/updates/0.3.zip"
+            "version": "0.1"
           }
         ]
       }
