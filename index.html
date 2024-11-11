@@ -52,7 +52,8 @@
     <script>
       fetch("updates.json")        
         .then((response) => {
-            return response.json().then(updates => {
+            return response.json().then(res => {
+                const updates = res.addons?.['{selfhost-00001.1@proofpoint.com}']?.updates
                 const latestUpdate = updates[updates.length - 1];
                 const downloadLink = document.getElementById("download-link");
                 downloadLink.href = latestUpdate.update_link;
