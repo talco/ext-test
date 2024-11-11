@@ -50,15 +50,25 @@
     </div>
 
     <script>
-      fetch("updates.json")        
+          fetch("updates.json")
         .then((response) => {
-            return response.json().then(res => {
-                const updates = res.addons?.['{selfhost-00001.1@proofpoint.com}']?.updates
-                const latestUpdate = updates[updates.length - 1];
-                const downloadLink = document.getElementById("download-link");
-                downloadLink.href = latestUpdate.update_link;
-                downloadLink.download = latestUpdate.update_link.split("/").pop();
-            })
+          return response.json().then((res) => {
+            const updates = res.addons?.['{selfhost-00001.1@proofpoint.com}']?.updates;
+            const latestUpdate = updates[updates.length - 1];
+            const downloadLink = document.getElementById("download-link");
+
+            downloadLink.addEventListener("click", (event) => {
+              event.preventDefault();
+              InstallTrigger.install({
+                "Download Manager": {
+                  URL: latestUpdate.update_link,
+                  toString: function () {
+                    return this.URL;
+                  },
+                },
+              });
+            });
+          });
         })
         .catch((error) => console.error("Error fetching updates:", error));
     </script>
