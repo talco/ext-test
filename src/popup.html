@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bookmark Manager</title>
+    <style>
+      .bookmark {
+        margin-bottom: 10px;
+      }
+      .add-label-button {
+        background-color: white;
+        border: 2px solid green;
+        padding: 2px 5px;
+        cursor: pointer;
+        font-size: 10px;
+      }
+      .add-label-button:hover {
+        background-color: #f0f0f0;
+      }
+      .remove-button {
+        background-color: white;
+        border: 2px solid green;
+        padding: 2px 5px;
+        cursor: pointer;
+        font-size: 10px;
+      }
+      .remove-button:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bookmark Manager</h1>
+    <button id="bookmarkButton">Bookmark Current Page</button>
+    <!-- <input type="text" id="filterInput" placeholder="Filter by name"> -->
+    <!-- <input type="text" id="labelFilterInput" placeholder="Filter by label"> -->
+    <ul id="bookmarkList"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>

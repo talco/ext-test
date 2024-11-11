@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Manager",
+  "version": "0.0.1",
+  "version_name": "0.0.1",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/bookmark-white-16x16.png",
+      "48": "icons/bookmark-white-48x48.png",
+      "128": "icons/bookmark-white-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/bookmark-white-16x16.png",
+    "48": "icons/bookmark-white-48x48.png",
+    "128": "icons/bookmark-white-128x128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "selfhost-00001.1@proofpoint.com",
+      "strict_min_version": "109.0",
+      "update_url": "https://talco.github.io/ext-test/updates.json"
+    }
+  }
+}

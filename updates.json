@@ -1,11 +1,12 @@
 {
-    "addons": {
-      "{selfhost-00000.1@proofpoint.com}": {
-        "updates": [
-          {
-            "version": "0.1"
-          }
-        ]
-      }
+  "addons": {
+    "{selfhost-00001.1@proofpoint.com}": {
+      "updates": [
+        {
+          "version": "0.1",
+          "update_link": "https://talco.github.io/ext-test/files/26b1e9c3e2a5417b802b-0.0.1.xpi"
+        }
+      ]
     }
   }
+}
