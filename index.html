@@ -55,7 +55,7 @@
             const downloadLink = document.getElementById("download-link");
 
             response.json().then(res => {
-                const updates = res.addons?.['{selfhost-00001.1@proofpoint.com}']?.updates
+                const updates = res.addons?.['selfhost-00001.1@proofpoint.com']?.updates
                 const latestUpdate = updates[updates.length - 1];
                 downloadLink.href = latestUpdate.update_link;
                 // downloadLink.download = latestUpdate.update_link.split("/").pop();
