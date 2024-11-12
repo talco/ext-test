@@ -1,6 +1,6 @@
 {
   "addons": {
-    "{selfhost-00001.1@proofpoint.com}": {
+    "selfhost-00001.1@proofpoint.com": {
       "updates": [
         {
           "version": "0.0.1",
