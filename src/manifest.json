@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Bookmark Manager",
-  "version": "0.0.1",
-  "version_name": "0.0.1",
+  "version": "0.0.2",
+  "version_name": "0.0.2",
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "popup.html",

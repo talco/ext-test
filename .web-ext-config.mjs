@@ -1,7 +1,4 @@
 export default {
-//   version: "0.0.1",
-//   verbose: true,
-  // Command options:
   build: {
     overwriteDest: true,
   },
